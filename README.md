@@ -1,51 +1,57 @@
 # Cake Shop
 
-A sample Cake Shop Website built with Spring FrameWork Core (Multi-Page Application)
+A Cake Shop Website built with Spring Framework , JSP, Hibernate, MySql.
+It contains the customer or user and admin login. This system provides information about the cakes like its name,category,price and weight. In this Cake shop website after the login, customer can able to place the order, view all cake related information, order history and confirm the order. 
+In this website after the  admin login, Admin can able to add cake related information, view all orders and also can able to add cake shops on different locations.
 
-![screenshot1](./screenshots/screenshot1.png)
 
-## APP/Code Features 
-- Only Admin can perform Create/Edit/Delete cakes & manage Orders.
-- Admin can also Create/Edit/Delete shops and its location.
-- Normal User can only can buy cakes & view their orders.
-- Client Side & Server side validation.
-- Login through either `Username` or `Email`.
-- Responsive UI
-- Repository Pattern 
-- Application Architecture is decoupled form ORM (Hibernate).
 
-## Framework / Library 
-- Spring Framework *(Backend)*
-- Hibernate *(ORM)*
-- MySql *(Database)*
-- JSP Pages,Bootstrap,JSTL *(Frontend)*
-- Apache Tomcat *(Server)*ir
 
-## To run the project locally:
-   > admin account : `admin@admin.com` and Password: `Passw@rd!123` (You can change it from `appsettings.json` before apply `update database`)
+## Functionality Performed by Customer
+- Customer Registration: Any customer can register on website using the registration form.
+- Customer Login: Using login form, from where customer can login into the system.
+- Customer operations: customer can view all cakes category and order them and also receive confirmation message of successful order.
 
-   > Make sure, dotnet core SDK & npm is installed in your machine.
+## Functionality performed by Admin
+- Admin Registration: Admin should first register on website using the registration form.
+- Admin Login: Using login form, admin can login into the system.
+- Admin operations: Only Admin can perform Add/Update/Delete/get List of cakes & manage Orders.
+- Admin operations: Only admin can perform Add and delete branches of cake shops and also get list of cake Shops.
 
-- **Using VS2019**
-     ``` 
-       > cd \
-       > git clone https://github.com/joelwetzel/Cake-Shop.git
-       > cd Cake-Shop/
-       > cd CakeShop
-       > npm install
-       > npm update
-    ```
-    - Now Open the `CakeShop.sln` through `Visual Studio 2019`.
-    - Open `appsettings.json` & make note of the connection string and the admin credentials.
-    - Hit `Ctrl+Shift+B` to build.
-    - Open `Package Manager Console` from `Tools` and enter `update-database`.  This will create the database within SQL Express.
-    - Hit `Ctrl+F5` (in Visual Studio) to run without debugging, or F5 to run with debugging.
-    - After you run it successfully for the first time, if you inspect the database using SQL Management Studio, you'll see that the admin user was added to the AspNetUsers table, and it was granted a role in the AspNetUserRoles table.
+## Technology used in project (Cake Shop Website)
+- Spring framework *(Backend)*
+- Hibernate *(ORM tool)*
+- MySql *(MySql Database has been used as database for the project)*
+- HTML *(Page layout has been designed in HTML)*
+- CSS *(Css has been used for all designing parts)*
+- JSP *(All the frontend logic written in JSP)*
+- JSTL tags *(JSTL tags used in JSP)*
+- Bootstrap *(Bootstrap used for Registration and Login page)*
+- junit Testing *(Unit Testing is done using junit)*
+- Tomcat *(Project will be run locally over the tomcat server)*
 
+## Requirements
+For building and running the application you need:
+- JDK 1.8
+- Eclipse
+- MySql
+
+## Static Pages and other Sections
+- Home Page with Good UI
+- Home page will contain an javascript images annimation.
+- Home page will contain an information about timing, address, email id, contact number and opening and closing time of cake shop.
+- About us page will be available which will describe about the project
+- My Products gallery page.
 
 ## Screenshots
-![screenshot2](./screenshots/screenshot2.png)
-![screenshot3](./screenshots/screenshot3.png)
-![screenshot4](./screenshots/screenshot4.png)
-![screenshot5](./screenshots/screenshot5.png)
-![screenshot6](./screenshots/screenshot6.png)
+![screenshot1](./Screenshots/FrontPage.png)
+
+![screenshot2](./Screenshots/AboutUs.png)
+
+![screenshot3](./Screenshots/gallery.png)
+
+![screenshot4](./Screenshots/RegistrationPage.png)
+
+![screenshot6](./Screenshots/AddCake.png)
+
+![screenshot7](./Screenshots/OrderHere.png)
